@@ -1,47 +1,117 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
-body {
-    font-family: "Montserrat", sans-serif;
-    margin: 0;
+
+* {
+  box-sizing: border-box;
 }
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+
+.container {
+  max-width: 1110px;
+  /* background-color: #777; */
+  margin-left: auto;
+  margin-right: auto;
+}
+.none {
+  display: none !important;
+}
+
+/*header*/
 .header {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-    height: 100vh;
-    width: 100%;
-    background-color: #1e4776;
-    background-image: url("./../img/header/header-bg.jpg");
-    background-size: cover;
-    background-position: center;
+  height: 100vh;
+  width: 100%;
+  background-color: #1e4776;
+  background-image: url("./../img/header/header-bg2.jpg");
+  background-size: cover;
+  background-position: center;
 
-    color: white;
+  color: white;
 }
 
 .header-title {
-    font-weight: 700;
-    line-height: 130%;
-    font-size: 56px;
-    text-align: center;
-    margin-bottom: 25px;
+  font-weight: 700;
+  line-height: 130%;
+  font-size: 56px;
+  text-align: center;
+  margin-bottom: 25px;
 }
 .header-subtitle {
-    font-weight: 700;
-    line-height: 24px;
-    font-size: 16px;
-    text-align: center;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
+  font-weight: 700;
+  line-height: 24px;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
 }
 
 .header-arrow {
-    width: 48px;
-    height: 48px;
-    /*background-image: url("./../img/header/chevron-down.svg");*/
-    position: absolute;
-    bottom: 0;
-    left: auto;
+  width: 48px;
+  height: 48px;
+  /*background-image: url("./../img/header/chevron-down.svg");*/
+  position: absolute;
+  bottom: 0;
+  left: auto;
+  margin-bottom: 30px;
+}
+
+/*portfolio*/
+
+.portfolio {
+  max-width: 1440px;
+  /* background-color: darkgreen; */
+  padding-top: 80px;
+  padding-bottom: 115px;
+}
+
+.portfolio-header {
+    margin: 0;
+    margin-bottom: 70px;
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 130%;
+  text-align: center;
+}
+.portfolio-card-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    
+}
+
+.card {
+    background: #ffffff;
+    padding: 20px;
+    max-width: 540px;
+    box-shadow: 0px 10px 40px rgba(126, 155, 189, 0.35);
     margin-bottom: 30px;
+}
+/* убрать отступы вниз у двух последних карточек */
+/* .card:last-child, .card:nth-last-child(2){
+    margin-bottom: 0;
+} */
+
+.card-img {
+  margin-bottom: 20px;
+}
+.card-title {
+  margin: 0;
+  margin-bottom: 13px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 130%;
+}
+.card-text {
+  margin: 0;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 130%;
 }
